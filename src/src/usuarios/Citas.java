@@ -7,5 +7,28 @@ public class Citas {
     private String especialidad;
     private String fecha;
 
+    
+    // Constructor General de la Clase Cita
+    public Citas(Paciente paciente, String numeroTurno, String especialidad, String fecha) {
+        this.paciente = paciente;
+        this.numeroTurno = numeroTurno;
+        this.especialidad = especialidad;
+        this.fecha = fecha;
+    }
+
+    // Getters y Setters
+    public Paciente getPaciente() { return paciente; }
+    public void setPaciente(Paciente paciente) { this.paciente = paciente; }
+
+    public String getNumeroTurno() { return numeroTurno; }
+    public void setNumeroTurno(String numeroTurno) { this.numeroTurno = numeroTurno; }
+
+    public String getEspecialidad() { return especialidad; }
+    public void setEspecialidad(String especialidad) { this.especialidad = especialidad; }
+
+    public String getFecha() { return fecha; }
+    public void setFecha(String fecha) { this.fecha = fecha; }
+
+
 
 }
