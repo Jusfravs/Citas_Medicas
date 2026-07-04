@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Main {
     public static int contadorTurnos = 1;
 
-    public static void main(String[] args) {
+    void main() {
         Queue<Citas> salaDeEspera = new LinkedList<>();
-        int opcion = 0;
+        int opcion;
 
         do {
             IO.println("\n=================================");
