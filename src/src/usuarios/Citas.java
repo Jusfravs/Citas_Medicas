@@ -7,7 +7,7 @@ public class Citas {
     private String especialidad;
     private String fecha;
 
-    
+
     // Constructor General de la Clase Cita
     public Citas(Paciente paciente, String numeroTurno, String especialidad, String fecha) {
         this.paciente = paciente;
@@ -28,6 +28,21 @@ public class Citas {
 
     public String getFecha() { return fecha; }
     public void setFecha(String fecha) { this.fecha = fecha; }
+
+
+    // Metodoo Impresion
+    public void mostrarTicketTurno() {
+        System.out.println("================================");
+        System.out.println("        TICKET DE TURNO         ");
+        System.out.println("================================");
+        System.out.println("Turno Nro: " + numeroTurno);
+        System.out.println("Especialidad: " + especialidad);
+        System.out.println("Fecha: " + fecha);
+        if (paciente != null) {
+            System.out.println("Paciente: " + paciente.getNombre() + " " + paciente.getApellido());
+        }
+        System.out.println("================================");
+    }
 
 
 
