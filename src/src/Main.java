@@ -28,17 +28,26 @@ public class Main {
                     if (salaDeEspera.isEmpty()) {
                         IO.println("Error: No hay pacientes en la cola. Use la opción 2 primero.");
                     } else {
-                        Citas citaActual = null;
-                        for (Citas c : salaDeEspera) { citaActual = c; }
+                        String turnoBuscado = IO.readString("Ingrese el Número de Turno a agendar (ej. 001): ");
+                        boolean encontrado = false;
 
-                        String esp = IO.readString("Ingrese la Especialidad: ");
-                        String fec = IO.readString("Ingrese la Fecha (DD/MM/AAAA): ");
+                        for (Citas c : salaDeEspera) {
+                            if (c.getNumeroTurno().equals(turnoBuscado)) {
+                                String esp = IO.readString("Ingrese la Especialidad: ");
+                                String fec = IO.readString("Ingrese la Fecha (DD/MM/AAAA): ");
 
-                        citaActual.setEspecialidad(esp);
-                        citaActual.setFecha(fec);
+                                c.setEspecialidad(esp);
+                                c.setFecha(fec);
 
-                        IO.println("¡Cita agendada con éxito!");
-                        citaActual.mostrarTicketTurno();
+                                IO.println("\n¡Cita agendada con éxito!");
+                                c.mostrarTicketTurno();
+                                encontrado = true;
+                                break;
+                            }
+                        }
+                        if (!encontrado) {
+                            IO.println("Error: Turno no encontrado en la sala de espera.");
+                        }
                     }
                     break;
 
