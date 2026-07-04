@@ -15,16 +15,35 @@ public class Main {
             IO.println("\n=================================");
             IO.println("  SISTEMA DE GESTIÓN DE TURNOS   ");
             IO.println("=================================");
-            IO.println("1. Agendar Cita (Especialidad/Fecha)");
-            IO.println("2. Registrar Paciente y Generar Turno");
+            IO.println("1. Registrar Paciente y Generar Turno");
+            IO.println("2. Agendar Cita (Especialidad/Fecha)");
             IO.println("3. Registrar Información Médica / Atender");
-            IO.println("4. Módulo de Pagos");
-            IO.println("5. Salir del Sistema");
+            IO.println("4. Salir del Sistema");
 
             opcion = IO.readInt("Seleccione una opción: ");
 
             switch (opcion) {
                 case 1:
+                    IO.println("\n--- REGISTRO DE NUEVO PACIENTE ---");
+                    String nom = IO.readString("Nombre: ");
+                    String ape = IO.readString("Apellido: ");
+                    int ed = IO.readInt("Edad: ");
+                    String tel = IO.readString("Teléfono: ");
+                    String cor = IO.readString("Correo: ");
+
+                    Paciente nuevoPaciente = new Paciente(nom, ape, ed, tel, cor);
+                    String turnoFormateado = String.format("%03d", contadorTurnos);
+
+                    Citas nuevaCita = new Citas(nuevoPaciente, turnoFormateado, "Por asignar", "Por asignar");
+                    salaDeEspera.add(nuevaCita);
+                    contadorTurnos++;
+
+                    IO.println("\n¡Paciente registrado en cola de espera!");
+                    nuevaCita.mostrarTicketTurno();
+                    IO.println("Pacientes actualmente en espera: " + salaDeEspera.size());
+                    break;
+
+                case 2:
                     if (salaDeEspera.isEmpty()) {
                         IO.println("Error: No hay pacientes en la cola. Use la opción 2 primero.");
                     } else {
@@ -49,26 +68,6 @@ public class Main {
                             IO.println("Error: Turno no encontrado en la sala de espera.");
                         }
                     }
-                    break;
-
-                case 2:
-                    IO.println("\n--- REGISTRO DE NUEVO PACIENTE ---");
-                    String nom = IO.readString("Nombre: ");
-                    String ape = IO.readString("Apellido: ");
-                    int ed = IO.readInt("Edad: ");
-                    String tel = IO.readString("Teléfono: ");
-                    String cor = IO.readString("Correo: ");
-
-                    Paciente nuevoPaciente = new Paciente(nom, ape, ed, tel, cor);
-                    String turnoFormateado = String.format("%03d", contadorTurnos);
-
-                    Citas nuevaCita = new Citas(nuevoPaciente, turnoFormateado, "Por asignar", "Por asignar");
-                    salaDeEspera.add(nuevaCita);
-                    contadorTurnos++;
-
-                    IO.println("\n¡Paciente registrado en cola de espera!");
-                    nuevaCita.mostrarTicketTurno();
-                    IO.println("Pacientes actualmente en espera: " + salaDeEspera.size());
                     break;
 
                 case 3:
@@ -96,10 +95,6 @@ public class Main {
                     break;
 
                 case 4:
-                    IO.println("Módulo de pagos en construcción...");
-                    break;
-
-                case 5:
                     IO.println("Cerrando el sistema médico...");
                     IO.println("Reporte final - Pacientes que quedaron en la cola: " + salaDeEspera.size());
                     break;
@@ -107,11 +102,11 @@ public class Main {
                 default:
                     IO.println("Opción no válida. Intente nuevamente.");
             }
-        } while (opcion != 5);
+        } while (opcion != 4);
     }
 }
 
-// 🛠️ PARCHE AUXILIAR: Esto hace que el código de tu profesor funcione sin errores
+
 class IO {
     private static final Scanner sc = new Scanner(System.in);
     public static void println(String msg) { System.out.println(msg); }
