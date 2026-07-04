@@ -62,4 +62,17 @@ public class Paciente {
     public void setMedicacion(String medicacion) { this.medicacion = medicacion; }
 
 
+    // Metodos de Impresion
+    public void mostrarDatosBasicos() {
+        System.out.println(String.format("=== DATOS BÁSICOS ===\nPaciente: %s %s\nEdad: %d años\nTeléfono: %s\nCorreo: %s",
+                nombre, apellido, edad, telefono, correo));
+    }
+
+    public void mostrarDatosMedicos() {
+        System.out.println(String.format("=== DATOS MÉDICOS ===\nTipo Sangre: %s\nAlergias: %s\nPeso: %.2f kg\nAltura: %.2f m\nMedicación: %s",
+                tipoSangre, alergias, peso, altura, medicacion));
+    }
+
+
+
 }
