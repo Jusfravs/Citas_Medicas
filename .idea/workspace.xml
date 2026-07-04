@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9957cd05-a452-4522-a2b2-74c7624e2d1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/src/usuarios/citas.java" afterDir="false" />
+    <list default="true" id="9957cd05-a452-4522-a2b2-74c7624e2d1e" name="Changes" comment="Correccion case 3">
+      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/usuarios/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
@@ -60,6 +61,12 @@
     "onboarding.tips.debug.path": "C:/Users/HP/IdeaProjects/Citas_Medicas/src/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\IdeaProjects\Citas_Medicas" />
+      <recent name="C:\Users\HP\IdeaProjects\Citas_Medicas\src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +91,23 @@
       <option name="project" value="LOCAL" />
       <updated>1782784815018</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correccion case 1">
+      <option name="closed" value="true" />
+      <created>1783145382549</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783145382549</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Correccion case 3">
+      <option name="closed" value="true" />
+      <created>1783145738103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783145738103</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,17 +115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer archivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer archivo" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/src/Main.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Correccion case 1" />
+    <MESSAGE value="Correccion case 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion case 3" />
   </component>
 </project>
