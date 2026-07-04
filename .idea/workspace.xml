@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9957cd05-a452-4522-a2b2-74c7624e2d1e" name="Changes" comment="Correccion case 3">
-      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/usuarios/Main.java" afterDir="false" />
+    <list default="true" id="9957cd05-a452-4522-a2b2-74c7624e2d1e" name="Changes" comment="Correccion organizacion de clases y main">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -58,7 +60,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/HP/IdeaProjects/Citas_Medicas/src/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/HP/IdeaProjects/Citas_Medicas/src/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -107,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783145738103</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Correccion organizacion de clases y main">
+      <option name="closed" value="true" />
+      <created>1783147255996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783147255996</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +131,7 @@
     <MESSAGE value="Primer archivo" />
     <MESSAGE value="Correccion case 1" />
     <MESSAGE value="Correccion case 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correccion case 3" />
+    <MESSAGE value="Correccion organizacion de clases y main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion organizacion de clases y main" />
   </component>
 </project>
