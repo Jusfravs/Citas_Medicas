@@ -30,7 +30,7 @@ public class Citas {
     public void setFecha(String fecha) { this.fecha = fecha; }
 
 
-    // Metodoo Impresion
+    // Metodo Impresion
     public void mostrarTicketTurno() {
         System.out.println("================================");
         System.out.println("        TICKET DE TURNO         ");
