@@ -73,22 +73,25 @@ public class Main {
 
                 case 3:
                     if (salaDeEspera.isEmpty()) {
-                        IO.println("Error: No hay pacientes en la cola para registrar información médica.");
+                        IO.println("Error: No hay pacientes en la cola para atender.");
                     } else {
+
                         Citas citaAtendida = salaDeEspera.poll();
                         Paciente p = citaAtendida.getPaciente();
 
-                        IO.println("\n--- REGISTRO DE INFORMACIÓN MÉDICA PARA: " + p.getNombre() + " " + p.getApellido() + " ---");
+                        IO.println("\n--- EL DOCTOR ESTÁ ATENDIENDO AL TURNO: " + citaAtendida.getNumeroTurno() + " ---");
+                        IO.println("Paciente: " + p.getNombre() + " " + p.getApellido());
+
                         p.setTipoSangre(IO.readString("Tipo de Sangre: "));
                         p.setAlergias(IO.readString("Alergias: "));
                         p.setPeso(IO.readDouble("Peso (kg): "));
                         p.setAltura(IO.readDouble("Altura (m): "));
                         p.setMedicacion(IO.readString("Medicación actual: "));
 
-                        IO.println("\n¡Información guardada exitosamente!");
+                        IO.println("¡Paciente atendido y despachado exitosamente!");
                         p.mostrarDatosBasicos();
                         p.mostrarDatosMedicos();
-                        IO.println("\n>>> Pacientes que quedan en la cola de espera: " + salaDeEspera.size());
+                        IO.println(">>> Pacientes que quedan esperando en la sala: " + salaDeEspera.size());
                     }
                     break;
 
